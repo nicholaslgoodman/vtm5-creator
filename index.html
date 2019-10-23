@@ -73,24 +73,28 @@
   <script type="text/javascript" src="./upload/uploadDirective.js"></script>
   <!--/dependencies-->
   <!--Firebase stuff-->
-  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.js"></script>
-  <script>
-    var config = {
-      apiKey: "AIzaSyDjNrDYn_77BLHfDFu3dth62GQTsi5vdZw",
-      authDomain: "vtmsite-64232.firebaseapp.com",
-      databaseURL: "https://vtmsite-64232.firebaseio.com",
-      projectId: "vtmsite-64232",
-      storageBucket: "vtmsite-64232.appspot.com",
-      messagingSenderId: "181998793987"
-    };
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
 
-    firebase.initializeApp(config);
-    angular.element(function(){
-      setTimeout(function(){
-        angular.bootstrap(document, ['site']);
-      }, 400);
-    });
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBgcSfm7s9G2s0bWsnspvXVr3fOvtBzNX0",
+      authDomain: "vtm5-creator.firebaseapp.com",
+      databaseURL: "https://vtm5-creator.firebaseio.com",
+      projectId: "vtm5-creator",
+      storageBucket: "vtm5-creator.appspot.com",
+      messagingSenderId: "392313736485",
+      appId: "1:392313736485:web:32fa3c6c2817391ef95ecc",
+      measurementId: "G-WX5EXG2FSR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
   <!--/Firebase stuff-->
 
